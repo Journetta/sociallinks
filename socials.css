@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    grid-area: title;
+    color: rgb(0, 0, 0);
+    background-color:rgb(255, 106, 106);
+    padding: 15px;
+    font-family: fantasy;
+    font-weight: 50;
+}
+
+body {
+    text-align: center;
+    position: fixed;
+    background-color: rgba(247, 64, 64, 0.192);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(68, 68, 68);
+    width: 100%;
+    grid-area: footer;
+    color:white;
+}
+
+.buttonsahh {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 30px;
+    list-style-type: none;
+}
+
+.social {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "title"
+    "buttons"
+    "blanka"
+    "footer"
+}
+
+.one {
+    border-style:solid;
+    padding: 25px;
+    margin: 5px;
+    border-radius: 30px;
+    background-color: red;
+    text-decoration: none;
+}
+
+.two {
+    border-style:solid;
+    padding: 25px;
+    margin: 5px;
+    border-radius: 30px;
+    background-color: rgb(0, 255, 213);
+    text-decoration: none;
+}
+
+.three {
+    border-style:solid;
+    padding: 25px;
+    margin: 5px;
+    border-radius: 30px;
+    background-color: rgb(136, 255, 0);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.three img {
+    width: 5%;
+    height: 5%;
+    align-self:center;
+    padding-right: 10px;
+}
+.four {
+    border-style:solid;
+    padding: 25px;
+    margin: 5px;
+    border-radius: 30px;
+    background-color: rgb(255, 0, 200);
+    text-decoration: none;
+}
+
+.five {
+    border-style:solid;
+    padding: 25px;
+    margin: 5px;
+    border-radius: 30px;
+    background-color: rgb(43, 115, 133);
+    text-decoration: none;
+}
