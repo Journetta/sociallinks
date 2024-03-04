@@ -3,18 +3,40 @@
     padding: 0;
 }
 
-h1 {
+
+header>h1 {
+    position: absolute;
+    top: 50px;
     text-align: center;
-    grid-area: title;
     color: rgb(0, 0, 0);
+}
+
+header>img {
+    position: absolute;
+    width: 7%;
+    right: 3%;
+    top: 10%;
+}
+
+header {
     background-color:rgb(255, 106, 106);
-    padding: 15px;
+    padding: 100px;
     font-family: fantasy;
     font-weight: 50;
+    background: white;
+    border-bottom-style: inset;
+    border-width: 10px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat:no-repeat;
+    border-style:solid;
+    position:relative;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px
 }
 
 body {
-    text-align: center;
     position: fixed;
     background-color: rgba(247, 64, 64, 0.192);
 	background-size: 400% 400%;
@@ -46,6 +68,34 @@ footer {
     color:white;
 }
 
+nav {
+    bottom: 0;
+    list-style-type: none;
+    display: inline;
+    border-style: solid;
+    position: absolute;
+bottom: 0;
+left: 0;
+    
+}
+
+nav>ul>li {
+    float: left;
+    bottom: 0;
+    border-style: solid;
+    list-style-type: none;
+    text-align: center;
+    
+}
+
+nav>ul>li>a {
+    display: block;
+    padding: 8px;
+    color: rgb(255, 0, 0);
+    border-style: solid;
+    border-color: red;
+
+}
 .buttonsahh {
     position: relative;
     top: 0;
@@ -119,4 +169,40 @@ footer {
     border-radius: 30px;
     background-color: rgb(43, 115, 133);
     text-decoration: none;
+}
+
+
+
+article {
+    position: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "photo text"
+    "photo text"
+}
+
+
+
+/* article page */
+.photo {
+    width: 30%;
+    grid-area: photo;
+    border-style: solid;
+    margin: 10px 10px;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+    
+}
+
+.text {
+    grid-area: text;
+    font-weight: bold;
+    color: white;
+    border-style: solid;
+    border-color: black;
+}
+
+.articlegrid {
 }
